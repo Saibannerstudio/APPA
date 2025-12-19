@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;600;700&family=Noto+Sans+Devanagari:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- 2. FIREBASE SDK -->
+    <!-- 2. FIREBASE SDK (UNCHANGED) -->
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
-    <!-- 3. AWS SDK -->
+    <!-- 3. AWS SDK (UNCHANGED) -->
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
 
     <style>
@@ -396,7 +396,7 @@
     });
     const s3 = new AWS.S3();
 
-    // Config
+    // Config - Corrected API Key
     const firebaseConfig = {
       apiKey: "AIzaSyCPdqpgK2tZD5fEDs1l2KeU-2SVV26X4Z4",
       authDomain: "apps-sai.firebaseapp.com",
@@ -406,7 +406,7 @@
       appId: "1:297977625670:web:d525df581c2c327a13de47"
     };
 
-    // Initialize
+    // Initialize (Compat Mode)
     firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
     const db = firebase.firestore();
